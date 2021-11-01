@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: "Vy's Realm",
   author: 'Khac Vy',
-  description: "My personal website and portfolio.",
+  description: 'My personal website and portfolio.',
   language: 'en-us',
   siteUrl: 'https://khacvy.com',
   siteRepo: 'https://github.com/trankhacvy/vy.tk',
@@ -16,7 +16,7 @@ const siteMetadata = {
   linkedin: 'https://www.linkedin.com/in/trankhacvy/',
   locale: 'en-US',
   analytics: {
-    googleAnalyticsId: '',
+    googleAnalyticsId: process.env.GA_TRACKING_ID,
   },
   newsletter: {
     provider: 'buttondown',
