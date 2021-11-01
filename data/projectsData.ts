@@ -11,6 +11,12 @@ const projectsData = [
     imgSrc: '/static/images/projects/crypto-huskies.jpeg',
     href: 'https://github.com/trankhacvy/crypto-huskies',
   },
+  {
+    title: 'MetaPumpkins',
+    description: `NFT Store for MetaPumpkin`,
+    imgSrc: '/static/images/projects/MetaPumpkins.png',
+    href: 'https://www.metapumpkin.store/',
+  },
 ]
 
 export default projectsData
