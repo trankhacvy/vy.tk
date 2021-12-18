@@ -1,0 +1,34 @@
+---
+title: Origin of Cascading
+date: '2021-12-18'
+tags: ['css']
+draft: true
+summary: Til there're 8 origins of cascading, not 2.
+images: []
+---
+> Til there're 8 origins of cascading, not 2 as I knew. They have order and the higher orders will override the lower no matter what specificity
+
+# Origin of Cascading
+
+- Style sheet may have three different origins: **author**, **user** and **user agent**.
+- **Author** stylesheets are the most common type of style sheet. These are style sheets that define styles as part of the design of a given web page or site. The author of the page defines the styles for the document using one or more stylesheets, which define the look and feel of the website — its theme.
+- **The user (or reader)** of the web site can choose to override styles in many browsers using a custom user stylesheet designed to tailor the experience to the user's wishes.
+- The browser has a basic style sheet that gives a default style to any document. These style sheets are named user-agent stylesheets. Some browsers use actual style sheets for this purpose, while others simulate them in code, but the end result is the same
+
+#### Cascading order
+
+|       | Origin      | Importance |
+| -------- | -------- | --------   |
+| 1     | User agent  | normal     |
+| 2     | User	      | normal     |
+| 3     | Author	    | normal     |
+| 4     | animations  |            |
+| 5     | Author	    | !important |
+| 6     | User	      | normal     |
+| 7     | User Agent  | !important |
+| 8(strongest)| transition  |            |
+
+
+###### tags: `css` `cascading origin`
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade
